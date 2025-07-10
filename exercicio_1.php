@@ -1,4 +1,4 @@
-<?php 
+<?php
 $numero = 10;
 
 if ($numero % 2 == 0) {
@@ -14,5 +14,3 @@ if ($numero % 2 == 0) {
 } else {
   echo "$numero é um número ímpar.";
 }
-
-?>
