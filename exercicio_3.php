@@ -1,7 +1,9 @@
 <?php
 
 $numero = 10; 
+
 echo $numero;
+
 echo "<br>";
 if ($numero > 0)  {
    echo "Numero positivo.";
