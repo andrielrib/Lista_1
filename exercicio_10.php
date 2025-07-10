@@ -4,7 +4,7 @@ $a = 0;
 $b = 1;
 
 while ($a <= $limite) {
-    echo $a . " ";
+    echo $a . "";
     $temp = $a + $b;
     $a = $b;
     $b = $temp;
