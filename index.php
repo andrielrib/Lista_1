@@ -1,11 +1,14 @@
 <?php 
-//Exercicio 1
-$numero = 4 ;
-echo '4';
-echo '<br>';
-if ($numero % 2 == 0)   {
-echo 'numero é par';
-} else {
-echo 'numero é impar';
+
+$numero = 5;
+
+for ($i = 1; $i <= 10; $i++) {
+
+echo "$numero  $i = ". ($numero * $i) . "<br>";    
+
 }
+
+
+
+
 ?>
