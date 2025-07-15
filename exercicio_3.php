@@ -12,3 +12,4 @@ if ($numero > 0) {
 } else {
     echo "zero.";
 }
+?>

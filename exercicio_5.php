@@ -19,3 +19,4 @@ if (somaDivisores($num1) == $num2 && somaDivisores($num2) == $num1) {
     echo "Nao sao numeros amigos.";
 }
 
+?>
