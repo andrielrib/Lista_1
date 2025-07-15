@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $soma += $i;
         }
     }
-    if ($soma == $numero) {
+    if ($soma == $num) {
         echo "$num é perfeito.";
     } else {
         echo "$num não é perfeito.";
