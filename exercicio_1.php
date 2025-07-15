@@ -9,8 +9,8 @@
 
 <?php
 if (isset($_POST['numero'])) {
-    $numero = $_POST['numero'];
-    if ($numero % 2 == 0) {
+    $num = $_POST['numero'];
+    if ($num% 2 == 0) {
         echo "O número é par.";
     } else {
         echo "O número é ímpar.";

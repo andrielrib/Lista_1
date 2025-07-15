@@ -9,9 +9,9 @@
 
 <?php
 if (isset($_POST['numero'])) {
-    $numero = $_POST['numero'];
+    $num = $_POST['numero'];
     for ($i = 1; $i <= 10; $i++) {
-        echo "$numero x $i = " . ($numero * $i) . "<br>";
+        echo "$num x $i = " . ($num * $i) . "<br>";
     }
 }
 ?>

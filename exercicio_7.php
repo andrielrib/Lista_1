@@ -9,17 +9,17 @@ v<!DOCTYPE html>
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $numero = $_POST['num'];
+    $num = $_POST['num'];
     $soma = 0;
-    for ($i = 1; $i < $numero; $i++) {
-        if ($numero % $i == 0) {
+    for ($i = 1; $i < $num; $i++) {
+        if ($num % $i == 0) {
             $soma += $i;
         }
     }
     if ($soma == $numero) {
-        echo "$numero é perfeito.";
+        echo "$num é perfeito.";
     } else {
-        echo "$numero não é perfeito.";
+        echo "$num não é perfeito.";
     }
 }
 ?>
