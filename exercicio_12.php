@@ -1,32 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><title>Contar Vogais</title></head>
+<body>
+<form method="post">
+    Texto: <input type="text" name="texto">
+    <input type="submit" value="Contar">
+</form>
+
 <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $texto = $_POST['texto'];
+    $conta = 0;
+    $vogais = ['a','e','i','o','u'];
 
-function contarV(string $texto): int {
-$texto = strtolower($texto);
- $vogais = ['a', 'e', 'i', 'o', 'u'];
-  $contador = 0;
-
-  for ($i = 0; $i < strlen($texto); $i++) {
-    if (in_array($texto[$i], $vogais)) {
-      $contador++;
+    for ($i = 0; $i < strlen($texto); $i++) {
+        if (in_array(strtolower($texto[$i]), $vogais)) {
+            $conta++;
+        }
     }
-  }
 
-  return $contador;
+    echo "Vogais: $conta";
 }
-
-$string = "variavel";
-$quantidade_vogais = contarV($string);
-echo "A string '$string' tem $quantidade_vogais vogais."; 
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
+</body>
+</html>
